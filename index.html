@@ -31,9 +31,33 @@
 					<br>
 					<small>Octubre de 2018</small>
 				</section>
-				<section style="text-align:left">
-					<h3>La biodiversidad está distribuida de manera heterogénea en la Tierra</h3>
-					<li>La biodiversidad terrestre tiende a ser mayor en zonas cercanas al ecuador</li>
+				<section style="text-align:left" id="biodiversidad">
+					<h4>La biodiversidad está distribuida de manera heterogénea en la Tierra</h4>
+					<li>Las zonas bajas son más biodiversas que las zonas altas.</li>					
+					<li>Los bosques tropicales y los arrecifes de coral son muy ricos en biodiversidad, pero en los desiertos o en los polos es muy escasa.</li>
+					<li>La biodiversidad terrestre tiende a ser mayor en zonas cercanas al ecuador.</li>
+					<li>La biodiversidad marina es mayor en las costas del Pacífico occidental.</li>
+				</section>
+				<section id="riqueza-aves">
+				  <h3>Patrones de biodiversidad</h3>
+				    <figure>
+              <img src="img/mol-riqueza-aves.png" alt="Riqueza de aves en MOL" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              <figcaption><small><a href="https://mol.org/patterns/richnessrarity?taxa=birds&indicator=sr">Riqueza de especies de aves según MOL</a> (2018).</small></figcaption>
+            </figure>
+				</section>				
+				<section id="riqueza-mammalia">
+				  <h3>Patrones de biodiversidad</h3>
+				    <figure>
+              <img src="img/mol-riqueza-mammalia.png" alt="Riqueza de mamíferos en MOL" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              <figcaption><small><a href="https://mol.org/patterns/richnessrarity?taxa=mammals&indicator=sr">Riqueza de especies de mamíferos según MOL</a> (2018).</small></figcaption>
+            </figure>
+				</section>				
+				<section id="registros-gbif">
+				  <h3>Datos de biodiversidad disponibles</h3>
+				    <figure>
+              <img src="img/gbif-puntos.png" alt="Registros de presencia en GBIF" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              <figcaption><small><a href="http://www.gbif.org">Registros de presencia en GBIF</a> (2018).</small></figcaption>
+            </figure>
 				</section>
 			</div>
 		</div>
@@ -46,6 +70,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+			  history: true,	
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
