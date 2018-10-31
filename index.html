@@ -20,6 +20,21 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		
+    <style type="text/css">
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>		
+		
 	</head>
 	<body>
 		<div class="reveal">
@@ -35,8 +50,8 @@
 					<h4>La biodiversidad está distribuida de manera heterogénea en la Tierra</h4>
 					<li>Las zonas bajas son más biodiversas que las zonas altas.</li>					
 					<li>Los bosques tropicales y los arrecifes de coral son muy ricos en biodiversidad, pero en los desiertos o en los polos es muy escasa.</li>
-					<li>La biodiversidad terrestre tiende a ser mayor en zonas cercanas al ecuador.</li>
-					<li>La biodiversidad marina es mayor en las costas del Pacífico occidental.</li>
+					<li>La biodiversidad terrestre tiende a ser más abundante en zonas cercanas al ecuador.</li>
+					<li>La biodiversidad marina es más abundante en las costas del Pacífico occidental.</li>
 				</section>
 				<section id="riqueza-aves">
 				  <h3>Patrones de biodiversidad</h3>
@@ -51,7 +66,21 @@
               <img src="img/mol-riqueza-mammalia.png" alt="Riqueza de mamíferos en MOL" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
               <figcaption><small><a href="https://mol.org/patterns/richnessrarity?taxa=mammals&indicator=sr">Riqueza de especies de mamíferos según MOL</a> (2018).</small></figcaption>
             </figure>
-				</section>				
+				</section>	
+				<section id="riqueza-lepidoptera">
+				  <h3>Patrones de biodiversidad</h3>
+				    <figure>
+              <img src="img/mol-riqueza-lepidoptera.png" alt="Riqueza de mariposas en MOL" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              <figcaption><small><a href="https://mol.org/patterns/richnessrarity?taxa=butterflies&indicator=sr">Riqueza de especies de mariposas según MOL</a> (2018).</small></figcaption>
+            </figure>
+				</section>											
+				<section id="riqueza-coniferas">
+				  <h3>Patrones de biodiversidad</h3>
+				    <figure>
+              <img src="img/mol-riqueza-coniferas.png" alt="Riqueza de coníferas en MOL" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              <figcaption><small><a href="https://mol.org/patterns/richnessrarity?taxa=conifers&indicator=sr">Riqueza de especies de coníferas según MOL</a> (2018).</small></figcaption>
+            </figure>
+				</section>								
 				<section id="registros-gbif">
 				  <h3>Datos de biodiversidad disponibles</h3>
 				    <figure>
@@ -59,6 +88,125 @@
               <figcaption><small><a href="http://www.gbif.org">Registros de presencia en GBIF</a> (2018).</small></figcaption>
             </figure>
 				</section>
+				<section id="registros-aves-costarica-gbif">
+				  <h3>Datos de biodiversidad disponibles</h3>
+				    <figure>
+              <img src="img/gbif-presencias-aves-cr.jpeg" alt="Registros de presencia de aves de Costa Rica en GBIF" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              <figcaption><small><a href="https://www.gbif.org/occurrence/search?country=CR&has_coordinate=true&taxon_key=212&has_geospatial_issue=false">Registros de presencia de aves de Costa Rica en GBIF</a> (2018).</small></figcaption>
+            </figure>
+				</section>
+				<section style="text-align:left" id="limitaciones-datos-biodiversidad">
+					<h3>Limitaciones de los datos de biodiversidad</h3>
+					<li>Con frecuencia, son escasos o incompletos.</li>					
+					<li>Los que están disponibles tienen sesgos:
+					  <ul>
+					    <li>Espaciales</li>
+					    <li>Taxonómicos</li>
+					    <li>Temporales</li>
+					  </ul>
+					</li>
+				</section>          				
+				<section id="razones-distribucion-biodiversidad-1">
+				  <h3>Razones para conocer la distribución de la biodiversidad</h3>
+				  <div class="row" >
+				    <div class="column" style="width:50%">
+				      <figure>
+                <img src="img/vaciosGRUAS.jpg" alt="Vacíos de conservación" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+                <figcaption><small>Vacíos de conservación<br>Imagen de Sinac</small></figcaption>
+              </figure>
+            </div>
+				    <div class="column" style="width:50%">
+				      <figure>
+                <img src="img/pezleon.jpg" alt="Especies invasivas" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+                <figcaption><small>Especies invasivas<br><a href="https://en.wikipedia.org/wiki/Pterois#/media/File:Red_lionfish_near_Gilli_Banta_Island.JPG">Imagen de Alexander Vasenin</a></small></figcaption>
+              </figure>
+            </div>
+          </div>            
+				</section>							
+				<section id="razones-distribucion-biodiversidad-2">
+				  <h3>Razones para conocer la distribución de la biodiversidad</h3>
+				  <div class="row" >
+				    <div class="column" style="width:50%">
+				      <figure>
+                <img src="img/anopheles.jpeg" alt="Vectores de enfermedades" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+                <figcaption><small>Vectores de enfermedades<br><a href="https://en.wikipedia.org/wiki/Anopheles#/media/File:Anopheles_stephensi.jpeg">Imagen de Jim Gathany</a></small></figcaption>
+              </figure>
+            </div>
+				    <div class="column" style="width:50%">
+				      <figure>
+                <img src="img/sapodorado.jpg" alt="Impacto del cambio climático" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+                <figcaption><small>Impacto del cambio climático<br><a href="https://en.wikipedia.org/wiki/Golden_toad#/media/File:Bufo_periglenes2.jpg">Imagen de FWS</a></small></figcaption>
+              </figure>
+            </div>
+          </div>            
+        </section>                    
+				<section style="text-align:left" id="modelado-nichos-01">
+					<h3>Modelos de nichos ecológicos</h3>
+					<li>Permiten representar el espacio ecológico (ej. temperatura, precipitación, radiación solar) que ocupan las especies.</li>					
+					<li>A partir de un modelo de nicho se puede estimar la distribución geográfica de una especie.</li>
+					<li>Utilizan datos que, en la actualidad, son cada vez más accesibles.</li>
+				</section>
+				<section id="modelado-nichos-02">
+				  <h3>Modelos de nichos ecológicos</h3>
+				    <figure>
+              <img src="img/niche-modelling-toyexample.png" alt="Esquema de modelo de nicho ecológico" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              <figcaption><small>Ejemplo de modelo de nicho ecológico<br><a href="https://www.researchgate.net/publication/278030758_Using_environmental_niche_model_to_study_the_distribution_of_Tonkin_snub-nosed_monkey_Rhinopithecus_avunculus_in_the_Northeastern_Vietnam_under_some_climate_change_scenarios/figures?lo=1">Imagen de Pham Thanh Van</a></small></figcaption>
+            </figure>
+				</section>					          
+				<section id="historia-nichos-01">
+				  <h3>Teoría de nichos ecológicos: Joseph Grinnell (1877-1939)</h3>
+				  <div class="row" >
+				    <div class="column" style="width:50%">
+				      <figure>
+                <img src="img/grinnellpapertitle.png" alt="Grinell" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              </figure>
+				      <figure>
+                <img src="img/grinnellfoto.jpeg" alt="Grinell" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              </figure>              
+            </div>
+				    <div class="column" style="width:50%">
+				      <figure>
+                <img src="img/grinnellpapermap.png" alt="Grinnell" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              </figure>
+            </div>
+          </div>            
+        </section>                    
+				<section id="historia-nichos-02">
+				  <h3>Teoría de nichos ecológicos: Evelyn Hutchinson (1903-1991)</h3>
+				  <div class="row" >
+				    <div class="column" style="width:50%">
+				      <figure>
+                <img src="img/hutchinsonfoto.jpg" alt="Hutchinson" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              </figure>
+            </div>
+				    <div class="column" style="width:50%">
+				      <figure>
+                <img src="img/hutchinson57.png" alt="Hutchinson" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              </figure>
+            </div>
+          </div>            
+        </section>                    
+				<section id="historia-nichos-03">
+				  <h3>Teoría de nichos ecológicos: Evelyn Hutchinson (1903-1991)</h3>
+				  <div class="row" >
+				    <div class="column" style="width:45%;text-align:left">
+				      <p><small>Hutchinson definió el nicho ecológico como la suma de todos los factores ambientales que actúan sobre un organismo.</small></p>
+				      <p></p>
+				      <figure>
+                <img src="img/nichofundamentalrealizado.jpg" alt="Hutchinson" style="border:none;background:none;box-shadow:none;margin: 0px 0px;">
+              </figure>
+            </div>
+            <div class="column" style="width:10%;text-align:left">
+              <p></p>
+            </div>
+				    <div class="column" style="width:45%;text-align:left">
+              <p><small>El nicho es una región en un espacio n-dimensional. Se definen dos nichos:</small></p>
+              <p><small><strong>Nicho fundamental:</strong> todos los aspectos del espacio n-dimensional en la ausencia de otras especies.</small></p>
+              <p><small><strong>Nicho realizado:</strong> la parte del nicho fundamental a la que la especie ha sido restringida debido a interacciones específicas.</small></p>
+            </div>
+          </div>            
+        </section>                    
+				
 			</div>
 		</div>
 
